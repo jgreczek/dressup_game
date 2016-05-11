@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>Dress Up Maki</title>
+		<script src ="js/functions.js"></script>
+		<script type="text/javascript"></script>
+		<script type="text/javascript" src="http://cdn.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+		<script type="text/javascript" src="http://cdn.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+		<link rel ="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		<html class = "dressUp-bg">
+
+		<!-- maki's universal head, body and feet-->
+		<img id = "base_head" src = "image/base_head.png" alt = "Maki's Head"/>
+		
+		<!-- maki's wardrobe-->
+		<img id = 'mouth_maki' src = "image/mouth_red.png" /><br>
+		<img id = "body_maki" src = "image/base_body.png" /><br>
+		<img id = "feet_maki" src = "image/base_feet.png"/>	
+		<img id = 'face_maki' src = "image/empty.png" /></br>
+		<img id = 'hat_maki' src = "image/empty.png" /><br>
+		<img id = 'acc_maki' src = "image/empty.png" /><br>
+
+		<div id ="NextButton">
+		<!--hat selection-->
+			<li id= "nextHat"><input id = "next_hat" type = "image" src = "image/arrowLeft.png" alt = "hat_next_button" onClick = "change_next_Hat()">
+		<!-- face selection-->
+		<li id= "nextFace"><input id = "next_face" type = "image" src = "image/arrowLeft.png" alt = "face_next_button" onClick = "change_next_Face()">
+		<!--mouth section-->
+			<li id = "nextMouth"><input id = "next_mouth" type = "image" src = "image/arrowLeft.png" alt = "mouth_next_button" onClick = "change_next_Mouth()">
+		<!--clothes selection-->
+			<li id = "nextBody"><input id = "next_clothes" type = "image" src = "image/arrowLeft.png" alt = "clothes_next_button" onClick = "change_next_Body()">
+		<!--shoes selection-->
+			<li id = "nextFeet"><input id = "next_shoes" type = "image" src = "image/arrowLeft.png" alt = "shoes_next_button" onClick = "change_next_Feet()">
+		<!-- accessories selection-->
+			
+		</div>
+
+
+		<div id = "PrevButton"> <!-- this is actually the right arrow-->
+		<!--hat selection-->
+			<li id= "prevHat"><input id = "prev_hat" type = "image" src = "image/arrowRight.png" alt = "hat_prev_button" onClick = "change_prev_Hat()">
+		<!-- face selection-->
+		<li id= "prevFace"><input id = "prev_face" type = "image" src = "image/arrowRight.png" alt = "face_prev_button" onClick = "change_prev_Face()">
+		<!--mouth section-->
+			<li id = "prevMouth"><input id = "prev_mouth" type = "image" src = "image/arrowRight.png" alt = "mouth_prev_button" onClick = "change_prev_Mouth()">
+		<!--clothes selection-->
+			<li id = "prevBody"><input id = "prev_clothes" type = "image" src = "image/arrowRight.png" alt = "clothes_prev_button" onClick = "change_prev_Body()">
+		<!--shoes selection-->
+			<li id = "prevFeet"><input id = "prev_shoes" type = "image" src = "image/arrowRight.png" alt = "shoes_prev_button" onClick = "change_prev_Feet()">
+		<!--accessories selection-->
+			<li id = "prevAcc"><input id = "prev_acc" type = "image" src = "image/arrowUp.png" alt = "acc_prev_button" onClick = "change_prev_Acc()" /> 
+			<li id = "nextAcc"><input id = "next_acc" type = "image" src = "image/arrowDown.png" alt = "acc_next_button" onClick = "change_next_Acc()"/>
+		</div>
+		
+		<div id = "submit_btn">
+			<input id = "submit_MAKI" type = "image" src = "image/sendMaki.png" alt = "Dress Up MAKI" onClick = "submit()">
+		</div> <!--end submit_btn-->
+		
+		 <div id = "exit_btn">	
+			<a href = "index.html"><input id = exit_dressUp" type = "image" src = "image/backButton.png" alt = "exit game" onClick = "exit_dressUp()" width =20% height =15%>
+		</div> <!--end exit_btn-->
+
+	</body>
+
+</html>
