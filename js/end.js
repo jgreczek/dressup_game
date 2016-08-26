@@ -1,6 +1,9 @@
+var ros;
 var main_topic;
+
 //Connecting to ROS
 window.onload = setup;
+//$('inflatebutton').bind('click', ClickFunction ).bind('tap', ClickFunction );
 
 function setup(){
 	
@@ -36,17 +39,15 @@ function setup(){
 
 	});
 
-	start_index();
-
+	start_breathing();
 }
 
-function start_index() {
-	
+function start_breathing(){
+
 	var message = new ROSLIB.Message({
-		data: "On main menu"
+		data: "Start ending interface"
 	});
 
 	main_topic.publish(message);
-}
-
+} 
 

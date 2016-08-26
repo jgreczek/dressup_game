@@ -213,8 +213,9 @@ body {
 }
 
 #exit_btn{
-	margin-top: 270px;
+	margin-top: 0px;
 	margin-left: 30px;
+	position: absolute;
 }
 
 

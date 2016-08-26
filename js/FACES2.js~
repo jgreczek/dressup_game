@@ -43,7 +43,7 @@ function setup(){
 function start_painRate(){
 
 	var message = new ROSLIB.Message({
-		data: "Start customization anxiety"
+		data: "Start customization anxiety 2"
 	});
 
 	main_topic.publish(message);
@@ -59,7 +59,7 @@ function pain_rate1() {
 	document.getElementById("next").style.display = "block";
 
 	var message = new ROSLIB.Message({
-		data: "1-great-c"
+		data: "1-great2-c"
 	});
 
 	main_topic.publish(message);
@@ -77,7 +77,7 @@ function pain_rate2() {
 	
 
 	var message = new ROSLIB.Message({
-		data: "2-okay-c"
+		data: "2-okay2-c"
 	});
 
 	main_topic.publish(message);
@@ -94,7 +94,7 @@ function pain_rate3() {
 	
 
 	var message = new ROSLIB.Message({
-		data: "3-average-c"
+		data: "3-average2-c"
 	});
 
 	main_topic.publish(message);
@@ -110,7 +110,7 @@ function pain_rate4() {
 	document.getElementById("next").style.display = "block";
 
 	var message = new ROSLIB.Message({
-		data: "4-little-anxious-c"
+		data: "4-little-anxious2-c"
 	});
 
 	main_topic.publish(message);
@@ -126,7 +126,7 @@ function pain_rate5() {
 	document.getElementById("next").style.display = "block";	
 	
 	var message = new ROSLIB.Message({
-		data: "5-anxious-c"
+		data: "5-anxious2-c"
 	});
 
 	main_topic.publish(message);
@@ -142,7 +142,7 @@ function pain_rate6() {
 	document.getElementById("next").style.display = "block";
 	
 	var message = new ROSLIB.Message({
-		data: "6-very-anxious-c"
+		data: "6-very-anxious2-c"
 	});
 
 	main_topic.publish(message);

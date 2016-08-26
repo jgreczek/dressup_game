@@ -203,7 +203,7 @@ var questions = [{
     
     // Suspend click listener during fade animation
     if(quiz.is(':animated')) {        
-      return false;5
+      return false;
     }
     choose();
     
@@ -307,7 +307,7 @@ var questions = [{
 	}
 	
 	// Controls display of 'prev' button
-	if(questionCounter === 1){// also add up the score and log that separately on the next line
+	if(questionCounter === 1){
 	  $('#prev').show();
 	} else if(questionCounter === 0){
 	  
@@ -321,9 +321,7 @@ var questions = [{
 	quiz.append(scoreElem).fadeIn();
 	$('#next').hide();
 	$('#prev').hide();
-	//$('#finish').show();
-	document.getElementById("finish").style.display = "block";
-	document.getElementById("instruction").style.display = "none";
+	$('#finish').show();
 	
       }
     });

@@ -30,9 +30,9 @@ var maki_mouth = [
 	"mouth_red.png",	
 	"mouth_blue.png",
 	"mouth_green.png",
-	"mouth_cyan.png",
+	/*"mouth_cyan.png",
 	"mouth_yellow.png",
-	"mouth_magenta.png",
+	"mouth_magenta.png",*/
 ];
 
 var maki_face = [
@@ -95,7 +95,7 @@ function setup(){
 		//Use the local IP if accessing it from tablet
 		
 		//url: 'ws://192.168.0.21:9090'
-		url: 'ws://192.168.7.194:9090'
+		url: 'ws://192.168.7.22:9090'
 		//url: 'ws://localhost:9090'
 		//url: 'ws://10.120.114.241:9090'
 		//url: 'ws://172.20.10.3:9090'
@@ -140,9 +140,9 @@ function setup(){
 	mapMouth[0] = "red mouth";
 	mapMouth[1] = "blue mouth";
 	mapMouth[2] = "green mouth";
-	mapMouth[3] = "cyan mouth";
+	/*mapMouth[3] = "cyan mouth";
 	mapMouth[4] = "yellow mouth";
-	mapMouth[5] = "magenta mouth";
+	mapMouth[5] = "magenta mouth";*/
 
 	// face accessories map
 	mapFace[0] = "no face accessory";
@@ -222,7 +222,7 @@ function change_prev_Mouth(){
 
 	x = x - 1;
 	if(x == -1)
-		x = 5;
+		x = 3;
 
 	console.log(x);
 	var mouth = maki_mouth[x];
@@ -234,7 +234,7 @@ function change_prev_Mouth(){
 function change_next_Mouth(){
 
 	x = x + 1;
-	if(x == 6)
+	if(x == 3)
 		x = 0;
 
 	console.log(x);
@@ -398,7 +398,13 @@ function start_dressUp(){
 }
 
 
-
+function exit_dressUp(){
+	var message = new ROSLIB.Message({		
+		data : "exit customization" 
+	});
+	
+	main_topic.publish(message);
+}
 
 	
 
