@@ -95,7 +95,7 @@ function setup(){
 		//Use the local IP if accessing it from tablet
 		
 		//url: 'ws://192.168.0.21:9090'
-		url: 'ws://192.168.7.22:9090'
+		url: 'ws://192.168.5.159:9090'
 		//url: 'ws://localhost:9090'
 		//url: 'ws://10.120.114.241:9090'
 		//url: 'ws://172.20.10.3:9090'
@@ -222,7 +222,7 @@ function change_prev_Mouth(){
 
 	x = x - 1;
 	if(x == -1)
-		x = 3;
+		x = 2;
 
 	console.log(x);
 	var mouth = maki_mouth[x];
