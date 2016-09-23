@@ -1,11 +1,13 @@
-<html>
+<html manifest="reference.appcache">
 	<head>
 		<title>Dress Up Maki</title>
-		<script src ="js/functions.js"></script>
+		<script src ="js/functions_du.js"></script>
 		<script type="text/javascript"></script>
-		<script type="text/javascript" src="http://cdn.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
-		<script type="text/javascript" src="http://cdn.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
-		<link rel ="stylesheet" href="css/style.css">
+		<!--<script type="text/javascript" src="http://cdn.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+		<script type="text/javascript" src="http://cdn.robotwebtools.org/roslibjs/current/roslib.min.js"></script>-->
+		<script type="text/javascript" src="eventemitter2.min.js"></script>
+		<script type="text/javascript" src="roslib.min.js"></script>
+		<link rel ="stylesheet" href="css/style_du.css">
 
 	</head>
 	<body>
@@ -49,7 +51,7 @@
 			<li id = "prevFeet"><input id = "prev_shoes" type = "image" src = "image/arrowRight.png" alt = "shoes_prev_button" onClick = "change_prev_Feet()">
 		<!--accessories selection-->
 			<li id = "prevAcc"><input id = "prev_acc" type = "image" src = "image/arrowUp.png" alt = "acc_prev_button" onClick = "change_prev_Acc()" /> 
-<!-- accessories selection-->
+		<!-- accessories selection-->
 			<li id = "nextAcc"><input id = "next_acc" type = "image" src = "image/arrowDown.png" alt = "acc_next_button" onClick = "change_next_Acc()"/>
 		
 		</div>
@@ -59,7 +61,7 @@
 		</div> <!--end submit_btn-->
 
 		<div id = "exit_btn">	
-			<a href = "FACES2.html"><input id = "exit_dressUp" type = "image" src = "image/backButton.png" alt = "exit game" onClick = "exit_dressUp()" width =35% height =21%>
+			<a href = "FACES2_du.html"><input id = "exit_dressUp" type = "image" src = "image/backButton.png" alt = "exit game" onClick = "exit_dressUp()" width =35% height =21%>
 		</div> <!--end exit_btn-->
 		<!--<div id = "next_btn">	
 			<a href = "FACES2.html"><input id = "exit_dressUp" type = "image" src = "image/next.png" alt = "exit game" width =20% height =15%>

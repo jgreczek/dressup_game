@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html manifest="reference.appcache">
+	<head>
+		<meta charset="utf-8">
+        	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Child Questionnaire</title>
+		<meta name="description" content="">
+        	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type='text/css' rel='stylesheet' href='css/questionnaire_du.css'/>
+		<!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans"/>-->
+	</head>
+	<body>
+		<html class = "questions-bg">
+
+		<div id="container">
+			<div id="title">
+				<h1 class = "fontsforweb_fontid_1396">Pre-Study Questionnaire</h1>
+				<p id = "instruction">Read each question carefully. Choose YES if you think it is true about you. Choose NO if you think it is not true about you.</p>
+			</div>
+			<div id="quiz"></div>
+		</div>
+
+		<input id = "next" type ="image" src = "image/next.png" alt = "next" width = "15%" height = "15%"/>
+		<input id = "prev" type ="image" src = "image/prev.png" alt = "prev" width = "15%"
+height = "15%"/>
+      <a href = "dressUp_du.html"><input id = "finish" type ="image" src = "image/next.png" alt = "next" width = "15%" height = "15%"/>
+		<!--<script type="text/javascript" src="http://cdn.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>-->
+		<script type="text/javascript" src="eventemitter2.min.js"></script>
+		<!--<script type="text/javascript" src="http://cdn.robotwebtools.org/roslibjs/current/roslib.min.js"></script>-->
+		<script type="text/javascript" src="roslib.min.js"></script>
+		<!--<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>-->
+		<script type='text/javascript' src='jquery.min.js'></script>
+		<!-- <script type="text/javascript" src='questions.json'></script> -->
+		<script type='text/javascript' src='js/questionnaire_du.js'></script>
+
+	</body>
+</html>
+

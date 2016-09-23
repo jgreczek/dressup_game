@@ -44,7 +44,7 @@ function setup(){
 function start_fearRate(){
 
 	var message = new ROSLIB.Message({
-		data: "Start customization fear rate 2"
+		data: "Start customization fear rate"
 	});
 
 	main_topic.publish(message);
@@ -60,7 +60,7 @@ function fear_rate1() {
 	timer();
 
 	var message = new ROSLIB.Message({
-		data: "1-great2-c"
+		data: "1-great-c"
 	});
 
 	main_topic.publish(message);
@@ -78,7 +78,7 @@ function fear_rate2() {
 	timer();
 
 	var message = new ROSLIB.Message({
-		data: "2-okay2-c"
+		data: "2-okay-c"
 	});
 
 	main_topic.publish(message);
@@ -95,7 +95,7 @@ function fear_rate3() {
 	timer();
 
 	var message = new ROSLIB.Message({
-		data: "3-average2-c"
+		data: "3-average-c"
 	});
 
 	main_topic.publish(message);
@@ -112,7 +112,7 @@ function fear_rate4() {
 	timer();
 
 	var message = new ROSLIB.Message({
-		data: "4-little-anxious2-c"
+		data: "4-little-anxious-c"
 	});
 
 	main_topic.publish(message);
@@ -129,7 +129,7 @@ function fear_rate5() {
 	timer();
 
 	var message = new ROSLIB.Message({
-		data: "5-anxious2-c"
+		data: "5-anxious-c"
 	});
 
 	main_topic.publish(message);
@@ -142,11 +142,11 @@ function fear_rate6() {
 	console.log('fear rate: ' + fearRate);
 	var modal = document.getElementById('myModal');
 	//modal.style.display = "none";
-	//document.getElementById("next").style.display = "block";
+	document.getElementById("next").style.display = "block";
 	timer();
 
 	var message = new ROSLIB.Message({
-		data: "6-very-anxious2-c"
+		data: "6-very-anxious-c"
 	});
 
 	main_topic.publish(message);

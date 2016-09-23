@@ -1,0 +1,19 @@
+<html manifest="reference.appcache">
+	<head>
+		<title>Breathing Game</title>
+		<script src ="js/end_du.js"></script>
+		<script type="text/javascript"></script>
+		<script type="text/javascript" src="http://cdn.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+		<script type="text/javascript" src="http://cdn.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+		<link rel="stylesheet" href="css/end_du.css">
+	</head>
+	<body>
+		<html class = "end-bg">
+		<div id='title'>
+			<h1 class = fontsforweb_fontid_1396">Thanks for helping me! Press 'next' button to start over.</h1>
+		</div>
+		<div id = "next" style="visibility: visible">
+			<a href = "questionnaire_du.html"><img src = "image/next.png" alt = "click to continue"/> 
+		</div>
+	</body>
+</html>

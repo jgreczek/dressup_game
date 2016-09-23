@@ -38,29 +38,29 @@ function setup(){
 
 	});
 
-	start_fearRate();
+	start_painRate();
 }
 
-function start_fearRate(){
+function start_painRate(){
 
 	var message = new ROSLIB.Message({
-		data: "Start customization fear rate 2"
+		data: "Start customization pain rate"
 	});
 
 	main_topic.publish(message);
 } 
 
-var fearRate;
-function fear_rate1() {
+var painRate;
+function pain_rate1() {
 	
-	fearRate = 1;
-	console.log('fear rate: ' + fearRate);
+	painRate = 1;
+	console.log('pain rate: ' + painRate);
 	var modal = document.getElementById('myModal');
 	//document.getElementById("next").style.display = "block";
 	timer();
 
 	var message = new ROSLIB.Message({
-		data: "1-great2-c"
+		data: "1-no-hurt-c"
 	});
 
 	main_topic.publish(message);
@@ -68,92 +68,92 @@ function fear_rate1() {
 }
 
 
-function fear_rate2() {
+function pain_rate2() {
 
-	fearRate = 2;
-	console.log('fear rate: ' + fearRate);
+	painRate = 2;
+	console.log('pain rate: ' + painRate);
 	var modal = document.getElementById('myModal');
 	//modal.style.display = "none";
 	//document.getElementById("next").style.display = "block";
 	timer();
 
 	var message = new ROSLIB.Message({
-		data: "2-okay2-c"
+		data: "2-little-bit-c"
 	});
 
 	main_topic.publish(message);
 }
 
 
-function fear_rate3() {
+function pain_rate3() {
 
-	fearRate = 3;
-	console.log('fear rate: ' + fearRate);
+	painRate = 3;
+	console.log('pain rate: ' + painRate);
 	var modal = document.getElementById('myModal');
 	//modal.style.display = "none";
 	//document.getElementById("next").style.display = "block";
 	timer();
 
 	var message = new ROSLIB.Message({
-		data: "3-average2-c"
+		data: "3-little-more-c"
 	});
 
 	main_topic.publish(message);
 }
 
 
-function fear_rate4() {
+function pain_rate4() {
 
-	fearRate = 4;
-	console.log('fear rate: ' + fearRate);
+	painRate = 4;
+	console.log('pain rate: ' + painRate);
 	var modal = document.getElementById('myModal');
 	//modal.style.display = "none";
 	//document.getElementById("next").style.display = "block";
 	timer();
 
 	var message = new ROSLIB.Message({
-		data: "4-little-anxious2-c"
+		data: "4-even-more-c"
 	});
 
 	main_topic.publish(message);
 }
 
 
-function fear_rate5() {
+function pain_rate5() {
 
-	fearRate = 5;
-	console.log('fear rate: ' + fearRate);
+	painRate = 5;
+	console.log('pain rate: ' + painRate);
 	var modal = document.getElementById('myModal');
 	//modal.style.display = "none";
 	//document.getElementById("next").style.display = "block";	
 	timer();
 
 	var message = new ROSLIB.Message({
-		data: "5-anxious2-c"
+		data: "5-whole-lot-c"
 	});
 
 	main_topic.publish(message);
 }
 
 
-function fear_rate6() {
+function pain_rate6() {
 
-	fearRate = 6;
-	console.log('fear rate: ' + fearRate);
+	painRate = 6;
+	console.log('pain rate: ' + painRate);
 	var modal = document.getElementById('myModal');
 	//modal.style.display = "none";
-	//document.getElementById("next").style.display = "block";
+	document.getElementById("next").style.display = "block";
 	timer();
 
 	var message = new ROSLIB.Message({
-		data: "6-very-anxious2-c"
+		data: "6-worst-c"
 	});
 
 	main_topic.publish(message);
 }
 
 function timer() {
-	window.setTimeout(show_next, 5000);	
+	window.setTimeout(show_next, 17000);	
 }
 
 function show_next() {

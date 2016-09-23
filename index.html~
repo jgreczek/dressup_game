@@ -11,7 +11,7 @@
 		<html class = "index-bg">
 		<div id = "Games">
 			<div class ="dressUp">
-			<a href="dressUp.html"><img src = "image/button1.png" /></a>
+			<a href="questionnaire.html"><img src = "image/button1.png" /></a>
 			</div>
 			<div class ="coping">
 			<a href="painRate.html"><img src = "image/button2.png"  /></a>

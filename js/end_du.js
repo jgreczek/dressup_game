@@ -3,6 +3,7 @@ var main_topic;
 
 //Connecting to ROS
 window.onload = setup;
+//$('inflatebutton').bind('click', ClickFunction ).bind('tap', ClickFunction );
 
 function setup(){
 	
@@ -13,7 +14,8 @@ function setup(){
 		//Use the local IP if accessing it from tablet
 		
 		//url: 'ws://192.168.0.21:9090'
-		url: 'ws://192.168.5.159:9090'
+		url: 'ws://192.168.8.217:9090'
+		//url: 'ws://192.168.5.159:9090'
 		//url: 'ws://localhost:9090'
 		//url: 'ws://10.120.114.241:9090'
 		//url: 'ws://172.20.10.3:9090'
@@ -44,45 +46,9 @@ function setup(){
 function start_breathing(){
 
 	var message = new ROSLIB.Message({
-		data: "Start CS1-Breathing"
+		data: "Start ending interface"
 	});
 
 	main_topic.publish(message);
 } 
-
-/*$('inflatebutton').bind('tap',count_breathing);*/
-
-var breath = 0;
-function count_breathing() {
-
-	breath = breath + 1;
-	console.log(breath);
-	
-	var message = new ROSLIB.Message({
-		data: "Breathe in"
-	});
-
-	main_topic.publish(message);
-
-	if (breath == 2) {
-		document.getElementById("next").style.visibility = "visible";
-		jump_next();
-	}
-}
-
-function count_breathing2() {
-	var message = new ROSLIB.Message({
-		data: "Breathe out"
-	});
-
-	main_topic.publish(message);
-}
-
-function jump_next() {
-	var message = new ROSLIB.Message({
-		data: "Breathe finished"
-	});
-
-	main_topic.publish(message);
-}
 
